@@ -1,36 +1,55 @@
 body{
-margin:0;
-font-family:Arial;
-background:#050c1a;
-color:white;
+  margin:0;
+  font-family:Arial;
+  background:#050c1a;
+  color:white;
 }
 
 #map{width:100vw;height:100vh;}
 
 #login{
-position:absolute;
-z-index:9;
-background:#070f2b;
-padding:20px;
-border-radius:10px;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
+  position:absolute;
+  z-index:9;
+  background:#070f2b;
+  padding:20px;
+  border-radius:10px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 
 input,button{
-padding:10px;
-margin-top:10px;
-width:100%;
+  padding:10px;
+  margin-top:10px;
+  width:100%;
 }
 
 #hud{
-position:absolute;
-top:10px;
-left:10px;
-background:rgba(0,0,0,0.7);
-padding:12px;
-border-radius:8px;
-z-index:2;
-display:none;
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:rgba(0,0,0,0.7);
+  padding:12px;
+  border-radius:8px;
+  z-index:2;
+  display:none;
+}
+
+/* ---------------- USER INFO ----------------- */
+.user-card {
+  background: rgba(0,0,0,0.8);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.user-dot {
+  width: 14px;
+  height: 14px;
+  background: orange;
+  border-radius: 50%;
+  box-shadow: 0 0 10px orange;
 }
