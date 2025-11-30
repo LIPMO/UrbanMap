@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UrbanTrack</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>Choisis ton pseudo</h2>
+  <input id="pseudoInput" placeholder="Pseudo">
+  <button onclick="start()">Entrer</button>
+</div>
+
+<div id="hud">
+  <div>Vitesse : <span id="speed">0</span> km/h</div>
+  <div>Vmax : <span id="vmax">0</span> km/h</div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
